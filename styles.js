@@ -8,6 +8,7 @@ let fahrenheitDefault = document.querySelector('.fahrenheit')
 
 convert.addEventListener('click', function () {
     let inputValue = input.value
+    input.value = ''
 
     if (isNaN(inputValue) || inputValue === ' ') {
         result.innerHTML = 'Enter correct value!'
